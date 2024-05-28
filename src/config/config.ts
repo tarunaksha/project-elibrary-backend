@@ -3,7 +3,7 @@ dotenvConfig(); // this will load the .env file and set the corresponding enviro
 
 const _config = {
     port: process.env.PORT,
-    apiKeys: ''
+    databaseUri: process.env.MONGO_DB_CONNECTION_URL,
 }
 
 export const config = Object.freeze(_config); // freeze is used to make the object immutable. This is a good practice to avoid accidental changes to the object.
